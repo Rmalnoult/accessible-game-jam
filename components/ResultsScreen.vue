@@ -105,12 +105,24 @@
             <h3 class="font-semibold text-gray-900 dark:text-white mb-2">
               About These Standards
             </h3>
-            <p class="text-sm text-gray-700 dark:text-gray-300">
+            <p class="text-sm text-gray-900 dark:text-gray-100 mb-3">
               These issues are based on the Web Content Accessibility Guidelines (WCAG) 2.1 Level AA,
               which are part of the European Accessibility Act requirements effective from 2025.
               Common issues include missing alt text, low color contrast, missing form labels,
               non-descriptive link text, and improper interactive elements – all of which can prevent
               people with disabilities from using websites effectively.
+            </p>
+            <p class="text-sm text-gray-900 dark:text-gray-100">
+              Want to learn more about web accessibility best practices?
+              <a
+                href="https://webforallguide.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-blue-600 dark:text-blue-400 hover:underline font-medium focus:outline-none focus:ring-2 focus:ring-blue-500 rounded"
+              >
+                Visit WebForAllGuide.com
+              </a>
+              for comprehensive accessibility guidelines.
             </p>
           </div>
         </div>

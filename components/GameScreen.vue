@@ -21,11 +21,11 @@
       </div>
 
       <!-- How to Play Instructions -->
-      <Card v-if="showInstructions" class="mb-6 bg-gradient-to-r from-purple-50 to-blue-50 dark:from-purple-950 dark:to-blue-950 border-2 border-purple-200 dark:border-purple-800">
+      <Card v-if="showInstructions" class="mb-6 bg-gray-50 dark:bg-gray-800 border-2 border-gray-200 dark:border-gray-700">
         <div class="p-6">
           <div class="flex items-start justify-between mb-4">
             <div class="flex items-center gap-3">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-purple-600 dark:text-purple-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-600 dark:text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
               <h2 class="text-xl font-bold text-gray-900 dark:text-white">How to Play</h2>

@@ -15,12 +15,12 @@
         </p>
 
         <div class="bg-white dark:bg-gray-800 rounded-lg shadow-xl p-6 md:p-8 mb-8">
-          <p class="text-base md:text-lg text-gray-600 dark:text-gray-400 mb-6">
+          <p class="text-base md:text-lg text-gray-700 dark:text-gray-300 mb-6">
             Identify and correct as many accessibility issues as you can on the example webpage to rack up points.
             No sign-up needed – just play!
           </p>
 
-          <p class="text-sm text-gray-500 dark:text-gray-500 mb-6">
+          <p class="text-sm text-gray-700 dark:text-gray-400 mb-6">
             This game is based on the Web Content Accessibility Guidelines (WCAG) 2.1 Level AA,
             which are part of the European Accessibility requirements effective from 2025.
           </p>
@@ -30,22 +30,10 @@
         <Button
           @click="startGame"
           size="lg"
-          class="w-full md:w-auto text-lg px-12 py-6 mb-4"
+          class="w-full md:w-auto text-lg px-12 py-6"
         >
           Start Game
         </Button>
-
-        <!-- How to Play Button -->
-        <div class="mt-4">
-          <Button
-            @click="showHowToPlay = true"
-            variant="outline"
-            size="default"
-            class="w-full md:w-auto"
-          >
-            How to Play
-          </Button>
-        </div>
       </div>
     </div>
 
@@ -79,60 +67,17 @@
       </div>
     </footer>
 
-    <!-- How to Play Dialog -->
-    <Dialog v-model:open="showHowToPlay">
-      <DialogContent>
-        <DialogHeader>
-          <DialogTitle>How to Play</DialogTitle>
-          <DialogDescription>
-            Learn how to find and fix accessibility issues
-          </DialogDescription>
-        </DialogHeader>
-
-        <div class="space-y-4 text-sm">
-          <div>
-            <h3 class="font-semibold text-base mb-2">1. Explore the page</h3>
-            <p class="text-muted-foreground">Look for things that might be problematic for accessibility (hard to read text, missing descriptions, etc.).</p>
-          </div>
-
-          <div>
-            <h3 class="font-semibold text-base mb-2">2. Tap to fix</h3>
-            <p class="text-muted-foreground">Click or tap an element that seems wrong, and choose the correct fix in the prompt.</p>
-          </div>
-
-          <div>
-            <h3 class="font-semibold text-base mb-2">3. Score points</h3>
-            <p class="text-muted-foreground">Earn 10 points for each correct fix. Fix all issues to maximize your score!</p>
-          </div>
-
-          <div class="bg-blue-50 dark:bg-blue-900/20 rounded-lg p-4">
-            <p class="text-xs text-muted-foreground">
-              These issues align with real web accessibility standards, so the game also serves as practice for WCAG compliance.
-            </p>
-          </div>
-        </div>
-
-        <Button
-          @click="showHowToPlay = false"
-          class="w-full"
-        >
-          Got it!
-        </Button>
-      </DialogContent>
-    </Dialog>
-
     <!-- About Modal -->
     <AboutModal v-model="showAbout" />
   </div>
 </template>
 
 <script setup lang="ts">
-import { Button, Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from '~/components/ui'
+import { Button } from '~/components/ui'
 import AboutModal from '~/components/AboutModal.vue'
 
 const gameStarted = ref(false)
 const showResults = ref(false)
-const showHowToPlay = ref(false)
 const showAbout = ref(false)
 const finalScore = ref(0)
 
