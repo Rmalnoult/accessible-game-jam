@@ -4,9 +4,15 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
 
   modules: [
+    'nuxt-gtag',
     '@nuxtjs/tailwindcss',
     '@nuxtjs/color-mode'
   ],
+
+  gtag: {
+    id: process.env.GOOGLE_ANALYTICS_ID || '',
+    enabled: !!process.env.GOOGLE_ANALYTICS_ID
+  },
 
   colorMode: {
     classSuffix: '',
