@@ -36,6 +36,7 @@ export default defineNuxtConfig({
       title: 'Accessible Game Jam - Learn Web Accessibility Through Interactive Gameplay',
       titleTemplate: '%s',
       meta: [
+        { name: 'google-site-verification', content: 'IMTmFQiC8_QIRtn8nSVYX8kW-buBev1hr6TKyvT6hXw' },
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         {
